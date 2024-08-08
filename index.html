@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
    
 </head>
 <body>
-    <header>
+    <header class="nav">
         <h1>Tienda M.Movil</h1>
         <div>
           <button id="cesta-carrito">
@@ -24,9 +25,12 @@
         </div>
         
     </header>
-    <main id="producto-contenedor">
+    <main >
+      <div id="producto-contenedor">
+        
+      </div |id="main">
 
-    </main>
+    </main >
     <div class="modal-contenedor">
         <div class="modal-carrito">
           <h3>Carrito</h3>
@@ -38,13 +42,15 @@
           <button class="boton-vaciar-carrito" ><a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar carrito</a></button>
         </div>
       </div>
-    
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="/data/stock.js"></script>
       <script src="/js/modal.js"></script>
       <script src="/js/cart.js"></script>
       <script src="/js/home.js"></script>
+      <script src="/js/getproducts.js"></script>
       <script src="/js/index.js"></script>
       <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   
 </body>
 </html>

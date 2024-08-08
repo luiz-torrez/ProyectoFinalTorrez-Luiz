@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    pintarProductos(productos);
+    getProducts();
     pintarCarrito(carrito);
     actualizarTotalCarrito(carrito);
   });

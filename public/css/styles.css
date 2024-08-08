@@ -25,9 +25,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-    /* margin-bottom: 20px; */
   }
   
   h1 {
@@ -194,5 +192,11 @@
   }
   .boton-vaciar-carrito{
     background-color: #d4d3d3
-    c
+  }
+  main{
+    background: rgba(255, 0, 0, 0.178) url(../images/imgmain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
   }

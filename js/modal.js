@@ -6,6 +6,7 @@ const vaciarCarritoBtn = document.getElementById("vaciar-carrito")
 
 abrirCarrito.addEventListener('click', () => {
     modalContenedor.classList.toggle('modal-active')
+    
 });
 
 cerrarCarrito.addEventListener('click', () => {
@@ -20,20 +21,32 @@ modalCarrito.addEventListener('click', (event) => {
     event.stopPropagation();
     if (event.target.classList.contains('boton-eliminar')) {
         eliminarProductoCarrito(event.target.value);
+        Toastify({
+        text:"producto eliminado",
+        duration: 2000,
+        gravity:"boton",
+        position:"left",
+       
+    }).showToast();
+
+
     };
+    
 });
 
 vaciarCarritoBtn.addEventListener("click", () => {
 
-        carrito.splice (pintarCarrito.cantidad);
-
-
-        pintarCarrito(carrito);
-        actualizarTotalCarrito(carrito);
+    Toastify({
+        text:"carrito vaciado",
+        duration: 2000,
+        gravity:"boton",
+        position:"left",
+       
+    }).showToast();    
+    carrito = [] ;
+    limpiarHTML();
+    document.location.reload(); 
+    pintarCarrito(carrito);
+    actualizarTotalCarrito(carrito);
 });
-
-    // if (event.target.classList.contains("vaciar-carrito")){
-    //     vaciarProductoscarrito(event.target.value)
-    //     console.log(vaciarcarrito)
-    // };
 
